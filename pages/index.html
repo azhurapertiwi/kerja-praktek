@@ -1,261 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>SDN 008 Purnama</title>
-      <link
-         rel="stylesheet"
-         href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      />
-      <link
-         rel="stylesheet"
-         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
-      />
-      <link rel="stylesheet" href="/assets/styles/styles.css" />
-   </head>
-   <body>
-      <!-- Navbar -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-         <div class="container">
-            <a class="navbar-brand" href="#">SDN 008 Purnama</a>
-            <button
-               class="navbar-toggler"
-               type="button"
-               data-bs-toggle="collapse"
-               data-bs-target="#navbarNav"
-            >
-               <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-               <ul class="navbar-nav ms-auto">
-                  <li class="nav-item">
-                     <a class="nav-link" href="#beranda">Beranda</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#profil-sekolah"
-                        >Profil Sekolah</a
-                     >
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#kurikulum">Kurikulum</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#berita">Berita</a>
-                  </li>
-                  <li class="nav-item">
-                     <a class="nav-link" href="#kontak">Kontak</a>
-                  </li>
-               </ul>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SDN 008 Purnama</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="/assets/styles/styles.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container">
+        <a class="navbar-brand" href="#">SDN 008 Purnama</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#beranda">Beranda</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#profil-sekolah">Profil Sekolah</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kurikulum">Struktur Organisasi</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#berita">Berita</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#kontak">Kontak</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Beranda -->
+    <header
+      id="beranda"
+      class="d-flex align-items-center justify-content-center"
+    >
+      <div class="overlay"></div>
+      <div class="header-content container text-white">
+        <h1 class="display-4">Selamat Datang di SDN 008 Purnama</h1>
+        <p>Sekolah yang Mempersiapkan Generasi Unggul untuk Masa Depan</p>
+        <a href="#profil-sekolah" class="btn btn-custom"
+          >Pelajari Lebih Lanjut</a
+        >
+      </div>
+    </header>
+
+    <!-- Profil Sekolah -->
+    <section id="profil-sekolah" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center">Profil Sekolah</h2>
+        <p class="text-center">
+          SDN 008 Purnama adalah sekolah unggulan yang berkomitmen untuk
+          memberikan pendidikan berkualitas bagi siswa-siswi.
+        </p>
+        <section id="statistics" class="py-5 bg-light">
+          <div class="container">
+            <div class="row text-center">
+              <div class="col-md-3">
+                <div class="card border-0 shadow-sm p-4">
+                  <div class="icon mb-3">
+                    <i class="fas fa-book-reader fa-3x text-primary"></i>
+                  </div>
+                  <h3 class="mb-1">94532</h3>
+                  <p class="text-muted">Siswa</p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card border-0 shadow-sm p-4">
+                  <div class="icon mb-3">
+                    <i class="fas fa-chalkboard fa-3x text-warning"></i>
+                  </div>
+                  <h3 class="mb-1">10</h3>
+                  <p class="text-muted">Ruang Kelas</p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card border-0 shadow-sm p-4">
+                  <div class="icon mb-3">
+                    <i class="fas fa-chalkboard-teacher fa-3x text-success"></i>
+                  </div>
+                  <h3 class="mb-1">25678</h3>
+                  <p class="text-muted">Guru</p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="card border-0 shadow-sm p-4">
+                  <div class="icon mb-3">
+                    <i class="fas fa-graduation-cap fa-3x text-danger"></i>
+                  </div>
+                  <h3 class="mb-1">2678</h3>
+                  <p class="text-muted">Tenaga Pendidikan</p>
+                </div>
+              </div>
             </div>
-         </div>
-      </nav>
+          </div>
+        </section>
 
-      <!-- Beranda -->
-      <header
-         id="beranda"
-         class="d-flex align-items-center justify-content-center"
-      >
-         <div class="overlay"></div>
-         <div class="header-content container text-white">
-            <h1 class="display-4">Selamat Datang di SDN 008 Purnama</h1>
-            <p>Sekolah yang Mempersiapkan Generasi Unggul untuk Masa Depan</p>
-            <a href="#profil-sekolah" class="btn btn-custom"
-               >Pelajari Lebih Lanjut</a
-            >
-         </div>
-      </header>
-
-      <!-- Profil Sekolah -->
-      <section id="profil-sekolah" class="py-5 bg-light">
-         <div class="container">
-            <h2 class="text-center">Profil Sekolah</h2>
-            <p class="text-center">
-               SDN 008 Purnama adalah sekolah unggulan yang berkomitmen untuk
-               memberikan pendidikan berkualitas bagi siswa-siswi.
-            </p>
-            <h3>Visi & Misi</h3>
-            <p>
-               <strong>Visi:</strong> Menciptakan generasi unggul yang mampu
-               bersaing di tingkat global.<br />
-               <strong>Misi:</strong> Menyediakan lingkungan belajar yang
-               inovatif dengan integrasi teknologi.
-            </p>
-            <h2 class="text-center mb-4">Fasilitas Sekolah</h2>
-            <div class="row g-3">
-               <div class="col-md-3">
-                  <div class="card text-center h-100 bg-primary text-white">
-                     <a
-                        href="laboratorium.html"
-                        class="card-body text-decoration-none"
-                     >
-                        <i class="fas fa-flask fa-3x"></i>
-                        <h5 class="card-title mt-3">Laboratorium Modern</h5>
-                        <p class="card-text">
-                           Peralatan mutakhir untuk kegiatan praktis.
-                        </p>
-                     </a>
-                  </div>
-               </div>
-               <div class="col-md-3">
-                  <div class="card text-center h-100 bg-primary text-white">
-                     <a
-                        href="perpustakaan.html"
-                        class="card-body text-decoration-none"
-                     >
-                        <i class="fas fa-book fa-3x"></i>
-                        <h5 class="card-title mt-3">Perpustakaan Digital</h5>
-                        <p class="card-text">Koleksi buku fisik dan digital.</p>
-                     </a>
-                  </div>
-               </div>
-               <div class="col-md-3">
-                  <div class="card text-center h-100 bg-primary text-white">
-                     <a
-                        href="lapangan.html"
-                        class="card-body text-decoration-none"
-                     >
-                        <i class="fas fa-basketball-ball fa-3x"></i>
-                        <h5 class="card-title mt-3">Lapangan Olahraga</h5>
-                        <p class="card-text">
-                           Fasilitas lengkap untuk olahraga.
-                        </p>
-                     </a>
-                  </div>
-               </div>
-               <div class="col-md-3">
-                  <div class="card text-center h-100 bg-primary text-white">
-                     <a
-                        href="kelas.html"
-                        class="card-body text-decoration-none"
-                     >
-                        <i class="fas fa-chalkboard-teacher fa-3x"></i>
-                        <h5 class="card-title mt-3">Kelas Interaktif</h5>
-                        <p class="card-text">Kelas modern dan interaktif.</p>
-                     </a>
-                  </div>
-               </div>
+        <h3>Visi & Misi</h3>
+        <p>
+          <strong>Visi:</strong> SD yang bermutu, berakhlak mulia serta
+          lingkungan yang asri.<br />
+          <strong>Misi:</strong> <br />1. Memotifasi siswa belajar dengan baik
+          dan tekun untuk melahirkan sumber daya manusia yang handal, berimtek
+          dan imtag. <br />2. Memberi pelayanan di luar jam efektif berupa
+          terobosan – terobosan untuk mencapai nilai sesuai standar yang telah
+          ditetapkan. <br />3. Menciptakan lingkungan yang bersih, indah, sehat
+          dan nyaman. <br />4. Meningkatkan kemampuan daya saing untuk
+          berkompetisi dengan sekolah- sekolah di wilayah Provinsi Riau dan
+          Nasional. <br />5. Membudayakan kehidupan yang beriman, bertaqwa serta
+          berbudaya melayu <br />6. Mempererat hubungan orang tua siswa melalui
+          komite sekolah dalam upaya menjadikan siswa yang berkarakter.
+        </p>
+        <h2 class="text-center mb-4">Fasilitas Sekolah</h2>
+        <div class="row g-3">
+          <div class="col-md-3">
+            <div class="card text-center h-100 bg-primary text-white">
+              <a href="kelas.html" class="card-body text-decoration-none">
+                <i class="fas fa-chalkboard-teacher fa-3x"></i>
+                <h5 class="card-title mt-3">Ruang Kelas</h5>
+                <p class="card-text">Kelas modern dan interaktif.</p>
+              </a>
             </div>
-         </div>
-      </section>
-
-      <!-- Kurikulum -->
-      <section id="kurikulum" class="py-5">
-         <div class="container">
-            <h2 class="text-center">Kurikulum</h2>
-            <p class="text-center">
-               Kurikulum SDN 008 Purnama mengikuti standar pendidikan nasional
-               dengan fokus pengembangan akademik dan non-akademik.
-            </p>
-            <ul class="list-group list-group-flush mt-4">
-               <li class="list-group-item">Pendidikan Karakter</li>
-               <li class="list-group-item">Bahasa Inggris</li>
-               <li class="list-group-item">TIK</li>
-               <li class="list-group-item">Program Literasi</li>
-               <li class="list-group-item">
-                  Ekstrakurikuler Seni dan Olahraga
-               </li>
-            </ul>
-         </div>
-      </section>
-
-      <!-- Berita -->
-      <section id="berita" class="py-5 bg-light">
-         <div class="container">
-            <h2 class="text-center">Berita Terbaru</h2>
-            <div class="row mt-4">
-               <div class="col-md-4">
-                  <div class="card">
-                     <img
-                        src="berita1.jpg"
-                        class="card-img-top"
-                        alt="Berita 1"
-                     />
-                     <div class="card-body">
-                        <h5 class="card-title">
-                           Juara Olimpiade Sains Nasional 2024
-                        </h5>
-                        <p class="card-text">
-                           Prestasi gemilang siswa SDN 008 Purnama.
-                        </p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="card">
-                     <img
-                        src="berita2.jpg"
-                        class="card-img-top"
-                        alt="Berita 2"
-                     />
-                     <div class="card-body">
-                        <h5 class="card-title">
-                           Peresmian Perpustakaan Digital
-                        </h5>
-                        <p class="card-text">
-                           Perpustakaan digital memberikan akses baru.
-                        </p>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="card">
-                     <img
-                        src="berita3.jpg"
-                        class="card-img-top"
-                        alt="Berita 3"
-                     />
-                     <div class="card-body">
-                        <h5 class="card-title">
-                           Pelaksanaan Program Sekolah Hijau
-                        </h5>
-                        <p class="card-text">
-                           Lingkungan belajar yang sehat dan asri.
-                        </p>
-                     </div>
-                  </div>
-               </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card text-center h-100 bg-primary text-white">
+              <a
+                href="perpustakaan.html"
+                class="card-body text-decoration-none"
+              >
+                <i class="fas fa-book fa-3x"></i>
+                <h5 class="card-title mt-3">Perpustakaan</h5>
+                <p class="card-text">Koleksi buku fisik dan digital.</p>
+              </a>
             </div>
-         </div>
-      </section>
-
-      <!-- Kontak -->
-      <section id="kontak" class="py-5">
-         <div class="container">
-            <h2 class="text-center">Kontak Kami</h2>
-            <div class="row mt-4">
-               <div class="col-md-4">
-                  <div class="kontak-item text-center">
-                     <i class="fas fa-map-marker-alt fa-2x"></i>
-                     <h4 class="mt-3">Alamat</h4>
-                     <p>Jl. Purnama No. 8, Kota Purnama</p>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="kontak-item text-center">
-                     <i class="fas fa-phone fa-2x"></i>
-                     <h4 class="mt-3">Telepon</h4>
-                     <p>(021) 123-4567</p>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="kontak-item text-center">
-                     <i class="fas fa-envelope fa-2x"></i>
-                     <h4 class="mt-3">Email</h4>
-                     <p>info@sdn008purnama.sch.id</p>
-                  </div>
-               </div>
+          </div>
+          <div class="col-md-3">
+            <div class="card text-center h-100 bg-primary text-white">
+              <a href="lapangan.html" class="card-body text-decoration-none">
+                <i class="fas fa-basketball-ball fa-3x"></i>
+                <h5 class="card-title mt-3">Lapangan</h5>
+                <p class="card-text">Fasilitas lengkap untuk olahraga.</p>
+              </a>
             </div>
-         </div>
-      </section>
+          </div>
+          <div class="col-md-3">
+            <div class="card text-center h-100 bg-primary text-white">
+              <a href="pendopo.html" class="card-body text-decoration-none">
+                <i class="fas fa-school fa-3x"></i>
+                <h5 class="card-title mt-3">Pendopo</h5>
+                <p class="card-text">Kelas modern dan interaktif.</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <!-- Footer -->
-      <footer class="py-4 bg-dark">
-         <p class="text-center mb-0 text-white">
-            © 2024 SDN 008 Purnama. Semua Hak Dilindungi.
-         </p>
-      </footer>
+    <!-- Kurikulum -->
+    <section id="kurikulum" class="py-5">
+      <div class="container">
+        <h2 class="text-center">Struktur Organisasi</h2>
+        <p class="text-center">
+          Kurikulum SDN 008 Purnama mengikuti standar pendidikan nasional dengan
+          fokus pengembangan akademik dan non-akademik.
+        </p>
+        <ul class="list-group list-group-flush mt-4">
+          <li class="list-group-item">Pendidikan Karakter</li>
+          <li class="list-group-item">Bahasa Inggris</li>
+          <li class="list-group-item">TIK</li>
+          <li class="list-group-item">Program Literasi</li>
+          <li class="list-group-item">Ekstrakurikuler Seni dan Olahraga</li>
+        </ul>
+      </div>
+    </section>
 
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-   </body>
+    <!-- Berita -->
+    <section id="berita" class="py-5 bg-light">
+      <div class="container">
+        <h2 class="text-center">Berita Terbaru</h2>
+        <div class="row mt-4">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="berita1.jpg" class="card-img-top" alt="Berita 1" />
+              <div class="card-body">
+                <h5 class="card-title">Juara Olimpiade Sains Nasional 2024</h5>
+                <p class="card-text">
+                  Prestasi gemilang siswa SDN 008 Purnama.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="berita2.jpg" class="card-img-top" alt="Berita 2" />
+              <div class="card-body">
+                <h5 class="card-title">Peresmian Perpustakaan Digital</h5>
+                <p class="card-text">
+                  Perpustakaan digital memberikan akses baru.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="berita3.jpg" class="card-img-top" alt="Berita 3" />
+              <div class="card-body">
+                <h5 class="card-title">Pelaksanaan Program Sekolah Hijau</h5>
+                <p class="card-text">Lingkungan belajar yang sehat dan asri.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak" class="py-5">
+      <div class="container">
+        <h2 class="text-center">Kontak Kami</h2>
+        <div class="row mt-4">
+          <div class="col-md-4">
+            <div class="kontak-item text-center">
+              <i class="fas fa-map-marker-alt fa-2x"></i>
+              <h4 class="mt-3">Alamat</h4>
+              <p>Jl. Purnama No. 8, Kota Purnama</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="kontak-item text-center">
+              <i class="fas fa-phone fa-2x"></i>
+              <h4 class="mt-3">Telepon</h4>
+              <p>(021) 123-4567</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="kontak-item text-center">
+              <i class="fas fa-envelope fa-2x"></i>
+              <h4 class="mt-3">Email</h4>
+              <p>info@sdn008purnama.sch.id</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark">
+      <p class="text-center mb-0 text-white">
+        © 2024 SDN 008 Purnama. Semua Hak Dilindungi.
+      </p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>

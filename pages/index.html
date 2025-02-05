@@ -14,6 +14,7 @@
     />
     <link rel="stylesheet" href="/assets/styles/styles.css" />
   </head>
+
   <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -80,7 +81,7 @@
                   <div class="icon mb-3">
                     <i class="fas fa-book-reader fa-3x text-primary"></i>
                   </div>
-                  <h3 class="mb-1">575</h3>
+                  <h3 class="mb-1" id="counter1">0</h3>
                   <p class="text-muted">Siswa</p>
                 </div>
               </div>
@@ -89,7 +90,7 @@
                   <div class="icon mb-3">
                     <i class="fas fa-chalkboard fa-3x text-warning"></i>
                   </div>
-                  <h3 class="mb-1">10</h3>
+                  <h3 class="mb-1" id="counter2">0</h3>
                   <p class="text-muted">Ruang Kelas</p>
                 </div>
               </div>
@@ -98,7 +99,7 @@
                   <div class="icon mb-3">
                     <i class="fas fa-chalkboard-teacher fa-3x text-success"></i>
                   </div>
-                  <h3 class="mb-1">27</h3>
+                  <h3 class="mb-1" id="counter3">0</h3>
                   <p class="text-muted">Guru</p>
                 </div>
               </div>
@@ -107,7 +108,7 @@
                   <div class="icon mb-3">
                     <i class="fas fa-graduation-cap fa-3x text-danger"></i>
                   </div>
-                  <h3 class="mb-1">8</h3>
+                  <h3 class="mb-1" id="counter4">0</h3>
                   <p class="text-muted">Tenaga Pendidikan</p>
                 </div>
               </div>
@@ -115,7 +116,7 @@
           </div>
         </section>
 
-        <h3>Visi & Misi</h3>
+        <h3 class="text-center">Visi & Misi</h3>
         <p>
           <strong>Visi:</strong> SD yang bermutu, berakhlak mulia serta
           lingkungan yang asri.<br />
@@ -337,4 +338,29 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   </body>
+
+  <script>
+    function animateCounter(elementId, targetNumber, duration) {
+      let counterElement = document.getElementById(elementId);
+      let currentNumber = 0;
+      let increment = Math.ceil(targetNumber / (duration / 10)); // Perkiraan kecepatan
+
+      let interval = setInterval(() => {
+        currentNumber += increment;
+        if (currentNumber >= targetNumber) {
+          currentNumber = targetNumber; // Pastikan tidak lebih dari target
+          clearInterval(interval);
+        }
+        counterElement.innerText = currentNumber;
+      }, 10); // Update setiap 10ms
+    }
+
+    // Jalankan saat halaman selesai dimuat
+    document.addEventListener("DOMContentLoaded", function () {
+      animateCounter("counter1", 575, 2000); // Animasi hingga 575 dalam 2 detik
+      animateCounter("counter2", 10, 20000);
+      animateCounter("counter3", 27, 20000);
+      animateCounter("counter4", 8, 20000);
+    });
+  </script>
 </html>

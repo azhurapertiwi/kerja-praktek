@@ -1,6 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
 header {
-  background: url("/assets/image/background_home.jpeg") no-repeat center
-    center/cover;
+  background: url("/assets/image/background1.jpg") no-repeat center center/cover;
   height: 100vh;
   position: relative;
   color: white;
@@ -42,4 +52,37 @@ footer {
   color: white;
   text-align: center;
   padding: 20px;
+}
+
+.cyan-900 {
+  background-color: #098fa9;
+}
+
+.text-cyan-900 {
+  color: #098fa9;
+}
+
+:root {
+  --animation-duration: 0.6s;
+  --opacity-duration: 0.5s;
+  --transform-distance: 100px;
+}
+
+.animate {
+  opacity: 0;
+  transition: all var(--animation-duration) ease-out,
+    opacity var(--opacity-duration) ease-out;
+}
+
+.animate-left {
+  transform: translateX(var(--transform-distance));
+}
+
+.animate-right {
+  transform: translateX(calc(-1 * var(--transform-distance)));
+}
+
+.animate.visible {
+  opacity: 1;
+  transform: translateX(0);
 }

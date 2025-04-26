@@ -7,6 +7,7 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 header {
@@ -15,6 +16,18 @@ header {
   position: relative;
   color: white;
 }
+
+.a-link {
+  color: white;
+  text-decoration: none;
+  margin-right: 1em;
+}
+
+.a-link:hover {
+  color: white;
+  text-decoration: underline;
+}
+
 .overlay {
   background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
@@ -23,18 +36,22 @@ header {
   right: 0;
   bottom: 0;
 }
+
 .header-content {
   z-index: 2;
   text-align: center;
 }
+
 .btn-custom {
   background-color: #007bff;
   color: white;
   border-radius: 5px;
 }
+
 .btn-custom:hover {
-  background-color: #0056b3;
+  background-color: #00708f;
 }
+
 .fasilitas-item,
 .kontak-item {
   background-color: #007bff;
@@ -43,15 +60,10 @@ header {
   border-radius: 10px;
   transition: transform 0.3s ease-in-out;
 }
+
 .fasilitas-item:hover,
 .kontak-item:hover {
   transform: translateY(-10px);
-}
-footer {
-  background-color: #333;
-  color: white;
-  text-align: center;
-  padding: 20px;
 }
 
 .cyan-900 {
@@ -62,6 +74,11 @@ footer {
   color: #098fa9;
 }
 
+.w-custom {
+  width: 35%;
+  height: 35vh;
+}
+
 :root {
   --animation-duration: 0.6s;
   --opacity-duration: 0.5s;
@@ -70,19 +87,24 @@ footer {
 
 .animate {
   opacity: 0;
-  transition: all var(--animation-duration) ease-out,
-    opacity var(--opacity-duration) ease-out;
+  transform: translateX(0);
+  transition: transform 0.6s ease-out, opacity 0.5s ease-out;
 }
 
 .animate-left {
-  transform: translateX(var(--transform-distance));
+  opacity: 0;
+  transform: translateX(-100px); /* Awalnya geser ke kiri */
+  transition: transform 0.6s ease-out, opacity 0.5s ease-out;
 }
 
 .animate-right {
-  transform: translateX(calc(-1 * var(--transform-distance)));
+  opacity: 0;
+  transform: translateX(100px); /* Awalnya geser ke kanan */
+  transition: transform 0.6s ease-out, opacity 0.5s ease-out;
 }
 
-.animate.visible {
+.animate-left.visible,
+.animate-right.visible {
+  transform: translateX(0); /* Setelah muncul: kembali ke tengah */
   opacity: 1;
-  transform: translateX(0);
 }
